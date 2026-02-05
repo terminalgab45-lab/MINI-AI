@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <title> MINI AI - home</title>
+  </head>
+  <body style="background-color: black; color: white; font-family: arial; text-align: center;">
+
+    <h1> MINI AI  🔥</h1>
+    <h2> come ti posso aiutare ?</h2>
+    <h3> emoji of the day: {{ emoji }}</h3>
+    <p> </p>
+    <p> </p>
+    <form method="POST">
+      <input type="text" name="testo" placeholder="Scrivi qualcosa..." required border="50px solid blue" background-color="lightblue">
+      <button type="submit">Invia -></button>
+    </form>
+    <p> </p>
+    <p> </p>
+    {% if risposta %}
+      <div class="box">
+          IA  : {{ risposta }}
+      </div>
+    {% endif %}
+    <p>  </p>
+    <p> </p>
+    
+    </body>
+    </html>
+
+  </body>
+  
+</html>
